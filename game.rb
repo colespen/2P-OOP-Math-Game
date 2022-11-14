@@ -12,12 +12,12 @@ class Game
 
   def greet_player 
     puts self.player_one.welcome, self.player_two.welcome
+    puts "Alright, let's put on our thinking helmets...\n"
   end
   
 
   def turn 
     @turn_num +=1
-    puts "Let's put on our thinking helmets...\n"
 
     if @turn_num.odd?
       @curr_player = player_one
@@ -30,13 +30,15 @@ class Game
     puts ""
 
     @curr_question = Question.new
-    puts "Alright, #{@curr_question.question}"
+    puts @curr_question.question
     answer = gets.chomp
+    puts ""
     
 
     if @curr_question.verify(answer)
+      
       puts "Nice one #{@curr_player.name}. #{answer} is correct."
-      puts "SCORE: #{@curr_player.name} has #{@curr_player.life} and  #{@opponent.name} has #{@opponent.life}/3"
+      puts "SCORE: #{@curr_player.name} has #{@curr_player.life}/3 and  #{@opponent.name} has #{@opponent.life}/3"
       self.turn
     else
       @curr_player.deplete

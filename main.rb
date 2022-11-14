@@ -9,8 +9,10 @@ puts "Let us do arithmetic together!"
   
   puts "Player one - Tell me your name:"
   name_one = gets.chomp
+  puts ""
   puts "Player two - Tell me your name:"
   name_two = gets.chomp
+  puts ""
   
 # instantiate new Game class
 

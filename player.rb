@@ -1,5 +1,5 @@
 class Player 
-  attr_accessor :name, :score, :life
+  attr_accessor  :life, :name
 
   def initialize(name)
     self.name = name
