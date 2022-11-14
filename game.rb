@@ -27,6 +27,7 @@ class Game
       @opponent = player_one
     end
     puts "It is #{@curr_player.name}'s go."
+    puts ""
 
     @curr_question = Question.new
     puts "Alright, #{@curr_question.question}"
