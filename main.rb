@@ -8,13 +8,13 @@ require './question'
 puts "Let us do arithmetic together!" 
   
   puts "Player one - Tell me your name:"
-  player_one = gets.chomp
+  name_one = gets.chomp
   puts "Player two - Tell me your name:"
-  player_two = gets.chomp
+  name_two = gets.chomp
   
 # instantiate new Game class
 
-new_game = Game.new(player_one, player_two)
+new_game = Game.new(name_one, name_two)
 
 # call start method from Game!
-new_game.start
+new_game.start_game

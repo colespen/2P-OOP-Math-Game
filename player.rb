@@ -1,5 +1,5 @@
 class Player 
-  attr_accessor :name :score :lives
+  attr_accessor :name, :score, :life
 
   def initialize(name)
     self.name = name
@@ -7,7 +7,7 @@ class Player
   end
 
   def welcome
-    puts "Ok #{self.name}! Put on your thinking cap."
+    puts "Hellloo #{self.name}!"
   end
 
   def deplete 

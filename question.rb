@@ -1,11 +1,11 @@
-class Player
+class Question
   attr_accessor :question
 
   def initialize
-    @num_one = rand(1..1000)
-    @num_two = rand(1..1000)
+    @num_one = rand(1..100)
+    @num_two = rand(1..100)
     @answer = @num_one + @num_two
-    @question = "What is the sum of #{@num_one} and #{@num_two}?"
+    @question = "What is the sum of #{@num_one} and #{@num_two}? \n"
   end
 
   def num_generated
@@ -14,6 +14,6 @@ class Player
   end
 
   def verify(answer)
-    answer.to_s == @answer
+    answer.to_i == @answer
   end
 end
