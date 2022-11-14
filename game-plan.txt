@@ -1,0 +1,31 @@
+Game Class(...)
+
+superclass
+  players are params
+  user input prompts
+  *** has Turn and Question ***
+
+  variable = turn number
+  method: calc lives left for player (subtract)
+  method: repeat for other player turn (loop?)
+  method: generate random math problem  (separate fn)
+
+  knows when game is over, lives of player depleted.
+
+
+
+
+
+
+Players class
+
+  no user input, only static info
+  variables = player #
+  variables = lives
+
+  wrong?
+  contains Player1 and Player2 subclasses?
+
+
+
+
