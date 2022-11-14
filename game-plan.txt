@@ -1,31 +1,46 @@
-Game Class(...)
+Game Class
+  getter setter player, 1 player 2
 
-superclass
-  players are params
-  user input prompts
-  *** has Turn and Question ***
+  initialize(names1 and 2)
+  * make 2 new Player(name) from Player class *
+    instance @variables:
+      -turn_num, curr_player, curr_question, opponent
 
-  variable = turn number
-  method: calc lives left for player (subtract)
-  method: repeat for other player turn (loop?)
-  method: generate random math problem  (separate fn)
+  method greeting: greet each - player1, player2
 
-  knows when game is over, lives of player depleted.
+  method turn: switches between players
+  - ".." whose turn now?
 
+    * make new question from Question class *
+    * take in user input, the answer from question
 
+    conditions to determine who is right or wrong
+      ***use verify() method from Question
+      - "..." right
+      - "..." wrong
 
+  method: start game - greeting method, then turn method
+  method: end game "winner and loser, byebye"
+ 
+///////////////////////////
 
+Question class
+  getter setter is question
 
+  initialize 
+    instnace @vars:
+      -num1, num2, answer (added), question"..."
 
-Players class
+  method nums_generated: print num1 and num2...
+  method verify(answer): answer to string == @answer?
+  
+///////////////////////////
 
-  no user input, only static info
-  variables = player #
-  variables = lives
+Players Class
+  no user input, only static
 
-  wrong?
-  contains Player1 and Player2 subclasses?
+  getter setter name, score, lives
 
-
-
+  initialize(name)
+    class name, 
 
