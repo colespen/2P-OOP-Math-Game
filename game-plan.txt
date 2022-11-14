@@ -42,5 +42,10 @@ Players Class
   getter setter name, score, lives
 
   initialize(name)
-    class name, 
+    this name, and lives start with 3!
 
+  method game greeting: ".." these names
+
+  method deplete life: subtract
+
+  method kill: if lives are 0,  true
