@@ -1,0 +1,1 @@
+A simple addition game using Ruby, OOP and prompts in the terminal. 
